@@ -24,10 +24,10 @@ def simulate_player_prop(season_avg, recent_avg, opp_defense, line, simulations=
 
 st.title("Player Prop Bet Simulator")
 
-season_avg = st.slider("Season Average", 5, 70, 25)
-recent_avg = st.slider("Recent Average", 5, 70, 20)
-opp_def = st.slider("Opponent Defense", 5, 70, 22)
-line = st.slider("Betting Line", 5, 50, 24)
+season_avg = st.slider("Season Average", 1, 70, 25)
+recent_avg = st.slider("Recent Average", 1, 70, 25)
+opp_def = st.slider("Opponent Defense", 1, 70, 25)
+line = st.slider("Betting Line", 1, 60, 25)
 
 if st.button("Run Simulation"):
     simulate_player_prop(season_avg, recent_avg, opp_def, line)
